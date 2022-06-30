@@ -1,0 +1,43 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    user-select: none;
+    overflow-y: hidden; /* Hide vertical scrollbar */
+    overflow-x: hidden; /* Hide horizontal scrollbar */
+}
+
+.container {
+    position: absolute;
+    top: 10vw;
+    right: 3vw;
+    padding: .5vw;
+    background-color: rgba(0, 0, 0, 0.66);
+    color: white;
+    border-radius: .3vw;
+    box-shadow: 0vw 0vw .2vw .2vw rgba(0, 0, 0, 0.66);
+    -webkit-border-radius: .3vw;
+    -moz-border-radius: .3vw;
+    -ms-border-radius: .3vw;
+    -o-border-radius: .3vw;
+}
+
+.text {
+    top: 2vw;
+    max-width: 15vw;
+    color: rgb(221, 221, 221);
+    min-width: 15vw;
+    line-height: 1.6vw;
+    text-align: start;
+}
+
+.handicon {
+    text-shadow: 0vw 0vw .4vw yellow;
+    color: yellow;
+}
+
+.int {
+    position: absolute;
+    top: .55vw;
+    right: 9.4vw;
+    text-shadow: 0vw 0vw .4vw white;
+    color: white;
+}
