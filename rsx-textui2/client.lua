@@ -1,20 +1,25 @@
 function TextToHtml(text)
-    text = text:gsub("~r~", "<span style=Color:red;>") 
-    text = text:gsub("~b~", "<span style=Color:blue;>")
-    text = text:gsub("~g~", "<span style=Color:green;>")
-    text = text:gsub("~y~", "<span style=Color:yellow;>")
-    text = text:gsub("~p~", "<span style=Color:purple;>")
-    text = text:gsub("~c~", "<span style=Color:grey;>")
-    text = text:gsub("~m~", "<span style=Color:darkgrey;>")
-    text = text:gsub("~u~", "<span style=Color:black;>")
-    text = text:gsub("~o~", "<span style=Color:gold;>")
-    text = text:gsub("~s~", "</span>")
-    text = text:gsub("~w~", "</span>")
-    text = text:gsub("~b~", "<b>")
-    text = text:gsub("~n~", "<br>")
-    text = "<span>" .. text .. "</span>"
-
-    return text
+    msg = msg:gsub("~r~", "<span style=color:red;>")
+    msg = msg:gsub("~b~", "<span style='color:rgb(0, 213, 255);'>")
+    msg = msg:gsub("~g~", "<span style='color:rgb(0, 255, 68);'>")
+    msg = msg:gsub("~y~", "<span style=color:yellow;>")
+    msg = msg:gsub("~p~", "<span style='color:rgb(220, 0, 255);'>")
+    msg = msg:gsub("~f~", "<span style=color:grey;>")
+    msg = msg:gsub("~m~", "<span style=color:darkgrey;>")
+    msg = msg:gsub("~u~", "<span style=color:black;>")
+    msg = msg:gsub("~o~", "<span style=color:gold;>")
+    msg = msg:gsub("~s~", "</span>")
+    msg = msg:gsub("~w~", "</span>")
+    msg = msg:gsub("~b~", "<b>")
+    msg = msg:gsub("~n~", "<br>")
+    msg = msg:gsub("\n", "<br>")
+    msg = msg:gsub("~input~", "<span class = 'INPUT_CONTEXT'>")
+    msg = msg:gsub("~INPUT_CONTEXT~", "<span class = 'INPUT_CONTEXT'>E</span>")
+    msg = msg:gsub("~INPUT_DETONATE~", "<span class = 'INPUT_CONTEXT'>G</span>")
+    msg = msg:gsub("~INPUT_VEH_EXIT~", "<span class = 'INPUT_CONTEXT'>F</span>")
+    msg = msg:gsub("~INPUT_RELOAD~", "<span class = 'INPUT_CONTEXT'>R</span>")
+    msg = "<span style=color:currentColor>" .. msg .. "</span>"
+    return msg
 end
 
 
