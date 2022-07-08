@@ -1,4 +1,4 @@
-function TextToHtml(text)
+function TextToHtml(msg)
     msg = msg:gsub("~r~", "<span style=color:red;>")
     msg = msg:gsub("~b~", "<span style='color:rgb(0, 213, 255);'>")
     msg = msg:gsub("~g~", "<span style='color:rgb(0, 255, 68);'>")
